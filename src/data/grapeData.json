@@ -1,26 +1,60 @@
 [
   {
     "name": "Red Grapes",
-    "sectionColor": "#B71C1C",
-    "buttonColor": "#E53935",
-    "grapes": ["Cabernet Sauvignon", "Merlot", "Pinot Noir", "Syrah/Shiraz", "Malbec", "Zinfandel"]
+    "sectionClass": "text-danger",
+    "grapes": [
+      { "id": "cabernet_sauvignon", "name": "Cabernet Sauvignon", "buttonColor": "#E53935" },
+      { "id": "merlot", "name": "Merlot", "buttonColor": "#D32F2F" },
+      { "id": "pinot_noir", "name": "Pinot Noir", "buttonColor": "#B71C1C" },
+      { "id": "syrah", "name": "Syrah/Shiraz", "buttonColor": "#8E24AA" },
+      { "id": "malbec", "name": "Malbec", "buttonColor": "#6A1B9A" },
+      { "id": "zinfandel", "name": "Zinfandel", "buttonColor": "#C2185B" },
+      { "id": "sangiovese", "name": "Sangiovese", "buttonColor": "#AD1457" }
+    ]
   },
   {
     "name": "White Grapes",
-    "sectionColor": "#FDD835",
-    "buttonColor": "#FBC02D",
-    "grapes": ["Chardonnay", "Sauvignon Blanc", "Riesling", "Pinot Grigio", "Viognier", "Semillon"]
+    "sectionClass": "text-warning",
+    "grapes": [
+      { "id": "chardonnay", "name": "Chardonnay", "buttonColor": "#FBC02D" },
+      { "id": "riesling", "name": "Riesling", "buttonColor": "#FDD835" },
+      { "id": "sauvignon_blanc", "name": "Sauvignon Blanc", "buttonColor": "#FFEB3B" },
+      { "id": "pinot_grigio", "name": "Pinot Grigio", "buttonColor": "#F9A825" },
+      { "id": "viognier", "name": "Viognier", "buttonColor": "#FBC02D" },
+      { "id": "semillon", "name": "Semillon", "buttonColor": "#FFD54F" }
+    ]
   },
   {
     "name": "Rosé Grapes",
-    "sectionColor": "#EC407A",
-    "buttonColor": "#F06292",
-    "grapes": ["Grenache", "Sangiovese", "Mourvèdre", "Carignan", "Cinsaut"]
+    "sectionClass": "text-pink",
+    "grapes": [
+      { "id": "grenache", "name": "Grenache", "buttonColor": "#EC407A" },
+      { "id": "mourvedre", "name": "Mourvèdre", "buttonColor": "#E91E63" },
+      { "id": "cinsaut", "name": "Cinsaut", "buttonColor": "#D81B60" },
+      { "id": "carignan", "name": "Carignan", "buttonColor": "#C2185B" },
+      { "id": "tempranillo", "name": "Tempranillo", "buttonColor": "#E53935" }
+    ]
   },
   {
-    "name": "Other Grapes",
-    "sectionColor": "#6A1B9A",
-    "buttonColor": "#8E24AA",
-    "grapes": ["Tempranillo", "Barbera", "Nebbiolo", "Gamay"]
+    "name": "Sparkling Wine Grapes",
+    "sectionClass": "text-info",
+    "grapes": [
+      { "id": "pinot_noir", "name": "Pinot Noir", "buttonColor": "#B71C1C" },
+      { "id": "chardonnay", "name": "Chardonnay", "buttonColor": "#FBC02D" },
+      { "id": "pinot_meunier", "name": "Pinot Meunier", "buttonColor": "#8E24AA" },
+      { "id": "glera", "name": "Glera", "buttonColor": "#81D4FA" },
+      { "id": "moscato", "name": "Moscato", "buttonColor": "#29B6F6" }
+    ]
+  },
+  {
+    "name": "Dessert Wine Grapes",
+    "sectionClass": "text-secondary",
+    "grapes": [
+      { "id": "muscat", "name": "Muscat", "buttonColor": "#8E24AA" },
+      { "id": "tokaji", "name": "Tokaji", "buttonColor": "#795548" },
+      { "id": "riesling", "name": "Riesling (Late Harvest)", "buttonColor": "#FDD835" },
+      { "id": "sauternes", "name": "Sauternes", "buttonColor": "#FFECB3" },
+      { "id": "ice_wine", "name": "Ice Wine", "buttonColor": "#4FC3F7" }
+    ]
   }
 ]

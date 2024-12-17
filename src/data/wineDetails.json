@@ -1,0 +1,44 @@
+[
+  {
+    "id": "red_wine",
+    "name": "Red Wine",
+    "description": "Red wine is made from dark-colored grape varieties. It often has rich flavors of berries, plums, and spices.",
+    "pairings": ["Red Meat", "Pasta", "Cheese", "Lamb"],
+    "regions": ["France", "Italy", "USA", "Argentina", "Australia"]
+  },
+  {
+    "id": "white_wine",
+    "name": "White Wine",
+    "description": "White wine is made from green or yellow grapes, offering fresh and crisp flavors of citrus, apples, and tropical fruits.",
+    "pairings": ["Poultry", "Seafood", "Salads", "Soft Cheeses"],
+    "regions": ["France", "Germany", "USA", "New Zealand", "South Africa"]
+  },
+  {
+    "id": "rosé_wine",
+    "name": "Rosé Wine",
+    "description": "Rosé wine is made by allowing limited contact with grape skins. It offers flavors of strawberries, cherries, and citrus.",
+    "pairings": ["Grilled Meats", "Light Pasta", "Summer Salads", "Seafood"],
+    "regions": ["Provence", "Spain", "USA", "Italy"]
+  },
+  {
+    "id": "sparkling_wine",
+    "name": "Sparkling Wine",
+    "description": "Sparkling wine is a carbonated wine, often associated with celebrations. Popular varieties include Champagne and Prosecco.",
+    "pairings": ["Seafood", "Appetizers", "Desserts", "Brunch Foods"],
+    "regions": ["France", "Spain", "Italy", "Australia", "USA"]
+  },
+  {
+    "id": "dessert_wine",
+    "name": "Dessert Wine",
+    "description": "Dessert wines are sweet wines enjoyed with desserts or on their own. Examples include Sauternes, Tokaji, and Ice Wine.",
+    "pairings": ["Fruit Desserts", "Chocolate", "Blue Cheese", "Nuts"],
+    "regions": ["France", "Hungary", "Canada", "Germany"]
+  },
+  {
+    "id": "blended_wine",
+    "name": "Blended Wine",
+    "description": "Blended wines are crafted by combining different grape varieties to achieve complexity and balance.",
+    "pairings": ["Roasted Meats", "Hearty Stews", "Aged Cheeses"],
+    "regions": ["Bordeaux", "Rhone Valley", "Australia", "Spain"]
+  }
+]

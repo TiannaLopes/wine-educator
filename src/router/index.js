@@ -10,6 +10,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import MapView from "@/views/MapView";
 import GrapeView from "@/views/GrapeView"
 import ResourcesView from "@/views/ResourcesView.vue";
+import WineCategoryView from "@/views/WineCategoryView.vue";
+import WineDetailsView from "@/views/WineDetailsView.vue";
+
+
 const routes = [
   {
     path: "/",
@@ -23,6 +27,18 @@ const routes = [
     path: "/resources",
     name: "ResourcesView",
     component: ResourcesView,
+  },
+  {
+    path: "/grape/:grapeId/:grapeName",
+    name: "WineCategory",
+    component: WineCategoryView,
+    props: true,
+  },
+  {
+    path: "/wine/:categoryId",
+    name: "WineDetails",
+    component: WineDetailsView,
+    props: true,
   },
 ];
 

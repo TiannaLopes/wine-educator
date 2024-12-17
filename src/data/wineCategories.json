@@ -1,0 +1,126 @@
+[
+  {
+    "grapeId": "cabernet_sauvignon",
+    "categories": [
+      { "id": "red_wine", "name": "Red Wine" },
+      { "id": "blended_wine", "name": "Blended Wine" }
+    ]
+  },
+  {
+    "grapeId": "merlot",
+    "categories": [
+      { "id": "red_wine", "name": "Red Wine" },
+      { "id": "blended_wine", "name": "Blended Wine" }
+    ]
+  },
+  {
+    "grapeId": "pinot_noir",
+    "categories": [
+      { "id": "red_wine", "name": "Red Wine" },
+      { "id": "sparkling_wine", "name": "Sparkling Wine" }
+    ]
+  },
+  {
+    "grapeId": "syrah",
+    "categories": [
+      { "id": "red_wine", "name": "Red Wine" },
+      { "id": "blended_wine", "name": "Blended Wine" }
+    ]
+  },
+  {
+    "grapeId": "malbec",
+    "categories": [
+      { "id": "red_wine", "name": "Red Wine" }
+    ]
+  },
+  {
+    "grapeId": "zinfandel",
+    "categories": [
+      { "id": "red_wine", "name": "Red Wine" },
+      { "id": "rosé_wine", "name": "Rosé Wine" }
+    ]
+  },
+  {
+    "grapeId": "chardonnay",
+    "categories": [
+      { "id": "white_wine", "name": "White Wine" },
+      { "id": "sparkling_wine", "name": "Sparkling Wine" }
+    ]
+  },
+  {
+    "grapeId": "riesling",
+    "categories": [
+      { "id": "white_wine", "name": "White Wine" },
+      { "id": "dessert_wine", "name": "Dessert Wine" }
+    ]
+  },
+  {
+    "grapeId": "sauvignon_blanc",
+    "categories": [
+      { "id": "white_wine", "name": "White Wine" }
+    ]
+  },
+  {
+    "grapeId": "pinot_grigio",
+    "categories": [
+      { "id": "white_wine", "name": "White Wine" }
+    ]
+  },
+  {
+    "grapeId": "grenache",
+    "categories": [
+      { "id": "rosé_wine", "name": "Rosé Wine" },
+      { "id": "red_wine", "name": "Red Wine" }
+    ]
+  },
+  {
+    "grapeId": "mourvedre",
+    "categories": [
+      { "id": "rosé_wine", "name": "Rosé Wine" },
+      { "id": "red_wine", "name": "Red Wine" }
+    ]
+  },
+  {
+    "grapeId": "cinsaut",
+    "categories": [
+      { "id": "rosé_wine", "name": "Rosé Wine" }
+    ]
+  },
+  {
+    "grapeId": "glera",
+    "categories": [
+      { "id": "sparkling_wine", "name": "Sparkling Wine" }
+    ]
+  },
+  {
+    "grapeId": "moscato",
+    "categories": [
+      { "id": "sparkling_wine", "name": "Sparkling Wine" },
+      { "id": "dessert_wine", "name": "Dessert Wine" }
+    ]
+  },
+  {
+    "grapeId": "muscat",
+    "categories": [
+      { "id": "dessert_wine", "name": "Dessert Wine" }
+    ]
+  },
+  {
+    "grapeId": "sauternes",
+    "categories": [
+      { "id": "dessert_wine", "name": "Dessert Wine" }
+    ]
+  },
+  {
+    "grapeId": "tokaji",
+    "categories": [
+      { "id": "dessert_wine", "name": "Dessert Wine" }
+    ]
+  },
+  {
+    "grapeId": "ice_wine",
+    "categories": [
+      { "id": "dessert_wine", "name": "Dessert Wine" }
+    ]
+  }
+]

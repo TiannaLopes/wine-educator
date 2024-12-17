@@ -1,23 +1,24 @@
 <template>
-  <div class="container mt-5">
-    <h1 class="text-center title mb-4">Wine Grape Varieties</h1>
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Wine Grape Varieties</h1>
 
-    <!-- Card Sections -->
-    <div v-for="(category, index) in grapeData" :key="index" class="card-section mb-4">
-      <!-- Section Title -->
-      <div class="section-header" :style="{ backgroundColor: category.sectionColor }">
-        <h3>{{ category.name }}</h3>
-      </div>
+    <!-- Iterate through each category -->
+    <div v-for="(category, index) in grapeData" :key="index" class="mb-5">
+      <!-- Section Header -->
+      <h3 :class="['text-uppercase', 'mb-3', category.sectionClass]">
+        {{ category.name }}
+      </h3>
 
       <!-- Buttons for Grapes -->
-      <div class="grape-buttons p-3">
+      <div class="d-flex flex-wrap gap-2">
         <button
           v-for="(grape, gIndex) in category.grapes"
           :key="gIndex"
-          class="grape-btn"
-          :style="{ backgroundColor: category.buttonColor }"
+          class="btn btn-lg text-white rounded-pill"
+          :style="{ backgroundColor: grape.buttonColor }"
+          @click="navigateToCategories(grape.id, grape.name)"
         >
-          {{ grape }}
+          {{ grape.name }}
         </button>
       </div>
     </div>
@@ -25,77 +26,42 @@
 </template>
 
 <script>
-// Import JSON Data
 import grapeData from "@/data/grapeData.json";
 
 export default {
   name: "WineGrapeList",
   data() {
     return {
-      grapeData,
+      grapeData, // Load the imported JSON data
     };
+  },
+  methods: {
+    navigateToCategories(grapeId, grapeName) {
+      // Use Vue Router to navigate to WineCategoryView with parameters
+      this.$router.push({
+        name: "WineCategory",
+        params: { grapeId, grapeName },
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
-/* General Container */
-.container {
-  font-family: 'Arial', sans-serif;
-  color: #4a4a4a;
+.gap-2 {
+  gap: 0.5rem; /* Bootstrap spacing utility extension */
 }
 
-/* Title Styling */
-.title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #8B1E3F;
+h3 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
 }
 
-/* Card Section Container */
-.card-section {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: transform 0.2s;
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card-section:hover {
-  transform: translateY(-5px);
-}
-
-/* Section Header */
-.section-header {
-  padding: 1rem;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Grape Buttons */
-.grape-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.grape-btn {
-  border: none;
-  border-radius: 50px;
-  padding: 0.75rem 1.5rem;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1rem;
-  text-transform: capitalize;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.grape-btn:hover {
+button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
