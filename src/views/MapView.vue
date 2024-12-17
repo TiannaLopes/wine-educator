@@ -1,14 +1,14 @@
 <template>
   <div>
     <MapComponent @region-clicked="handleRegionClick" />
-    <DecisionComponent />
+    <DecisionComponent v-if="selectedRegion" :region="selectedRegion" />
   </div>
 </template>
 
 <script>
 import MapComponent from "@/components/MapComponent.vue";
 import DecisionComponent from "@/components/DecisionComponent.vue";
-import { useDecisionStore } from "@/stores/decisionStore";
+import { useRouter } from "vue-router";
 
 export default {
   name: "MapView",
@@ -16,11 +16,17 @@ export default {
     MapComponent,
     DecisionComponent,
   },
+  data() {
+    return {
+      selectedRegion: null,
+    };
+  },
   setup() {
-    const decisionStore = useDecisionStore();
+    const router = useRouter();
 
-    const handleRegionClick = (regionId) => {
-      decisionStore.startDecision(regionId);
+    const handleRegionClick = (regionName) => {
+      // Set regionName and navigate
+      router.push({ name: "Region", params: { name: regionName } });
     };
 
     return {
@@ -29,5 +35,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

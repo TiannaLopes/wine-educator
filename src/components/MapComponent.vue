@@ -1,7 +1,7 @@
 <template>
   <div class="card shadow-sm">
     <div class="card-body">
-      <div id="map" @click="handleRegionClick('region1')"></div>
+      <div id="map" @click="handleRegionClick"></div>
     </div>
   </div>
 </template>
@@ -12,10 +12,14 @@ export default {
   props: {
     getEntries: {
       type: Array,
-      default: () => [], // Ensures an empty array if not provided
+      default: () => [], 
     },
   },
-  computed: {
+  data() {
+    return {
+      mapData: window.simplemaps_worldmap_mapdata,
+    };
+  },computed: {
     /*
      * Computed to call the global simplemap scripts in index.html
      */
@@ -24,8 +28,7 @@ export default {
     },
     filteredRegions() {
       let regionMap = this.simplemaps_type;
-
-      Object.entries(regionMap.mapdata.state_specific).forEach((val) => {
+      Object.entries(regionMap.mapdata.state_specific).forEach((val)=> {
         if (this.selectedRegionIds.includes(val[0])) {
           val[1].color = "#0d6efd";
         }
@@ -39,16 +42,21 @@ export default {
         .map((entry) => entry?.selectedRegion?.id)
         .filter((id) => id !== null && id !== undefined);
     },
+ },
+  mounted() {
+   if (this.simplemaps_type?.load) {
+      this.filteredRegions.load();
+   }
   },
   methods: {
-    handleRegionClick(regionId) {
-      this.$emit("region-clicked", regionId);
+    handleRegionClick(event) {
+      // Detect region ID dynamically
+      const regionId = event.target.dataset.state || null;
+      if (regionId) {
+        const regionName = this.mapData.state_specific[regionId]?.name || "";
+        this.$emit("region-clicked", regionName);
+      }
     },
-  },
-  mounted() {
-    if (this.simplemaps_type?.load) {
-      this.filteredRegions.load();
-    }
   },
 };
 </script>
