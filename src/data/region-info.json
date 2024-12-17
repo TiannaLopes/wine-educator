@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Europe",
+    "links": ["France", "Italy", "Spain", "Germany", "Portugal"]
+  },
+  {
+    "name": "France",
+    "links": ["Bordeaux", "Champagne", "Burgundy", "Alsace"]
+  },
+  {
+    "name": "Bordeaux",
+    "content": {
+      "grapes": "Cabernet Sauvignon, Merlot",
+      "flavorNotes": "Blackcurrant, plum, tobacco",
+      "pairing": "Steak, lamb, aged cheeses"
+    }
+  }
+]

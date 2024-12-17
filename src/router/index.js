@@ -12,6 +12,7 @@ import GrapeView from "@/views/GrapeView"
 import ResourcesView from "@/views/ResourcesView.vue";
 import WineCategoryView from "@/views/WineCategoryView.vue";
 import WineDetailsView from "@/views/WineDetailsView.vue";
+import RegionView from "@/views/RegionView.vue";
 
 
 const routes = [
@@ -40,6 +41,7 @@ const routes = [
     component: WineDetailsView,
     props: true,
   },
+    { path: "/region/:name", name: "Region", component: RegionView, props: true },
 ];
 
 /*
