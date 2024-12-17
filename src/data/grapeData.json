@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Red Grapes",
+    "sectionColor": "#B71C1C",
+    "buttonColor": "#E53935",
+    "grapes": ["Cabernet Sauvignon", "Merlot", "Pinot Noir", "Syrah/Shiraz", "Malbec", "Zinfandel"]
+  },
+  {
+    "name": "White Grapes",
+    "sectionColor": "#FDD835",
+    "buttonColor": "#FBC02D",
+    "grapes": ["Chardonnay", "Sauvignon Blanc", "Riesling", "Pinot Grigio", "Viognier", "Semillon"]
+  },
+  {
+    "name": "Rosé Grapes",
+    "sectionColor": "#EC407A",
+    "buttonColor": "#F06292",
+    "grapes": ["Grenache", "Sangiovese", "Mourvèdre", "Carignan", "Cinsaut"]
+  },
+  {
+    "name": "Other Grapes",
+    "sectionColor": "#6A1B9A",
+    "buttonColor": "#8E24AA",
+    "grapes": ["Tempranillo", "Barbera", "Nebbiolo", "Gamay"]
+  }
+]

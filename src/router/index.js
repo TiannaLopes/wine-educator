@@ -8,12 +8,21 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import MapView from "@/views/MapView";
-
+import GrapeView from "@/views/GrapeView"
+import ResourcesView from "@/views/ResourcesView.vue";
 const routes = [
   {
     path: "/",
     name: "MapView",
     component: MapView,
+  },  {
+    path: "/grape",
+    name: "GrapeView",
+    component: GrapeView,
+  },  {
+    path: "/resources",
+    name: "ResourcesView",
+    component: ResourcesView,
   },
 ];
 
